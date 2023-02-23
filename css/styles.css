@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 :root{
-    --fondo: #0A1130;
+    --fondo: #010413;
     --buttons1: #092FEB;
 }
 body{
@@ -24,17 +24,23 @@ body{
     padding: 50px 0;
 }
 .header{
-    background-image: url('/assets/tierra4.jpg');
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+    position: relative;
+}
+.header-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.header-img img{
+    width: 600px;
 }
 .header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .header-logo h2{
     font-size: 30px;
@@ -77,9 +83,14 @@ body{
     border-radius:20px;
     overflow: hidden;
     background-color: #0a1130b9;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
    
     
 }
+
 .header-box-titles{
     width:50%;
     padding: 20px;
@@ -131,6 +142,7 @@ body{
     padding: 20px 0;
     animation: astronauts 7s linear infinite ;
 }
+/*Animations of Astronauts*/
 @keyframes astronauts {
     0%,100%{
         transform: translateY(-30px);
@@ -142,28 +154,272 @@ body{
     
 }
 
+/*Space*/
+.space{
+    margin: 100px 0;
+}
+
+
 /*Hitory section*/
 
 .history-section{
-    margin: 40px auto;
-    border: 2px solid green;
+    margin: 10px auto;
+    background-color: #0a1130b9;
+    border-radius: 20px;
+  
 }
 .history-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
-    height: 450px;
+    width: 90%;
+    height: 400px;
+
+
 }
 .history-titles{
-    width: 60%;
+    width: 50%;
+    padding: 20px;
+
+}
+.line{
+    border-top: 2px solid var(--buttons1);
+    max-width: 100px;
+    border-radius: 10px;
+}
+.titles{
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 10px 0;
+    
+}
+.sub-titles{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
 
 }
 .historys-image{
-    width: 40%;
+    width: 30%;
+    height: 90%;
+   /* border: 10px solid var(--buttons1);*/
 }
 .history-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.buttons{
+    display: block;
+    padding: 10px 15px;
+    margin: 20px 0;
+    width: 150px;
+    border: 2px solid var(--buttons1);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Moon Section*/
+.moon-section{
+    background-color: #0a1130b9;
+    border-radius: 20px;
+}
+
+.moon-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: auto;
+height: 400px;
+width: 90%;
+
+}
+.moon-titles{
+    width: 35%;
+}
+.moon-titles p {
+    margin: 25px 0;
+    font-size: 16px;
+}
+.moon-image{
+    width: 25%;
+    margin: 0 20px;
+}
+.moon-img{
+    width: 100%;
+}
+.moon-subtitles{
+    width: 35%;
+    margin-top: 100px;
+  
+}
+.moon-subtitles p {
+    font-size: 16px;
+}
+.star{
+    position: relative;
+    
+}
+ .stars{
+    position: absolute;
+    font-size: 8px;
+    opacity: 0.5;
+    animation: estrella 2s linear  infinite ;
+} 
+
+.star .stars:nth-child(1){
+    top: 200px;
+    left: 50px;
+
+}
+.star .stars:nth-child(2){
+    top: 70%;
+    right: 80%;
+}
+.star .stars:nth-child(3){
+    top: 300px;
+    left: 20%;
+
+}
+.star .stars:nth-child(4){
+    top: 80px;
+    left: 90px;
+
+}
+
+.star .stars:nth-child(5){
+    top: 30%;
+    left: 400px;
+
+}
+
+.star .stars:nth-child(6){
+    top: 360px;
+    right:  80px;
+
+}
+.star .stars:nth-child(7){
+    top: 100px;
+    right: 90px;
+
+}
+
+.star .stars:nth-child(8){
+    bottom: 10px;
+    left: 600px;
+
+}
+.star .stars:nth-child(9){
+    top: 250px;
+    right: 150px;
+
+}
+
+.star .stars:nth-child(10){
+    top: 80px;
+    right: 250px;
+
+}
+
+.star .stars:nth-child(11){
+    top: 400px;
+    right: 250px;
+
+}
+.star .stars:nth-child(12){
+    top: 400px;
+    left: 50px;
+
+}
+.star .stars:nth-child(13){
+    top: 100px;
+    left: 190px;
+
+}
+.star .stars:nth-child(14){
+    top: 200px;
+    left: 190px;
+
+}
+.star .stars:nth-child(15){
+    top: 40px;
+    right: 20px;
+}
+
+ @keyframes estrella {
+    0%{
+      font-size: 8px;
+      opacity: 0.1;
+    }
+    50%{
+        font-size: 9px;
+        opacity: 1;
+        
+    }100%{
+        font-size: 8px;
+        opacity: 0.1;
+    }
+} 
+
+
+/*Explores*/
+.explores-section{
+    background-color: #0a1130b9;
+    border-radius: 20px;
+    height: 600px;
+    text-align: center;
+}
+.line-explore{
+    border-top: 2px solid var(--buttons1);
+    max-width: 150px;
+    margin: auto;
+    height: 2px;
+}
+
+
+.explorer-slider{
+    position: relative;
+}
+.slider-header{
+    width: 100%;
+    height: 70%;
+
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+
+}
+.slider-text{
+    height: 30%;
+    margin: 10px ;
+
+}
+.slider-titles{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.slider-info{
+    font-size: 14px;
+
+}
+.swiper {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 18px;
+    color: #fff;
+    background-color: var(--fondo);
 }
