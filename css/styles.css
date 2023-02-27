@@ -371,7 +371,6 @@ width: 90%;
 .explores-section{
     background-color: #0a1130b9;
     border-radius: 20px;
-    height: 600px;
     text-align: center;
 }
 .line-explore{
@@ -387,7 +386,7 @@ width: 90%;
 }
 .slider-header{
     width: 100%;
-    height: 70%;
+    height: 60%;
 
 }
 .slider-img{
@@ -396,7 +395,7 @@ width: 90%;
 
 }
 .slider-text{
-    height: 30%;
+    height: 35%;
     margin: 10px ;
 
 }
