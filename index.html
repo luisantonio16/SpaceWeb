@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Space Web</title>
 </head>
 <body>
@@ -27,6 +25,12 @@
             </nav>
         </div>  
         <div class="star">
+            <div class="stars">*</div>
+            <div class="stars">*</div>
+            <div class="stars">*</div>
+            <div class="stars">*</div>
+            <div class="stars">*</div>
+
             <div class="stars">*</div>
             <div class="stars">*</div>
             <div class="stars">*</div>
@@ -106,61 +110,112 @@
         <div class="line-explore"></div>
        
         <div class="explorer-slider">
-                <div class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="slider-header">
-                                <img class="slider-img" src="/assets/Neil-Armstrong.jpg">
-                            </div>
-                            <div class="slider-text">
-                                <h2 class="slider-titles">Neil Armstrong</h2>
-                                <p class="slider-info">fue un astronauta e ingeniero aeronáutico estadounidense que se convirtió en la primera persona en caminar sobre la Luna en 1969.</p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="slider-header">
-                                <img class="slider-img" src="/assets/buzz-aldrin.jpg">
-                            </div>
-                            <div class="slider-text">
-                                <h2 class="slider-titles">buzz Aldrin</h2>
-                                <p class="slider-info">he was the pilot of apollo 11 he and neil astrong are the first men to set foot on the moon</p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="slider-header">
-                                <img class="slider-img" src="/assets/michael-collins.jpg">
-                            </div>
-                            <div class="slider-text">
-                                <h2 class="slider-titles">Michael Collins</h2>
-                                <p class="slider-info">He was the one who flew in 1969 in the Columbia command module of the Apollo 11 mission.</p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="slider-header">
-                                <img class="slider-img" src="/assets/Yuri-Gagarin.jpg">
-                            </div>
-                            <div class="slider-text">
-                                <h2 class="slider-titles">Yuri Gagarin</h2>
-                                <p class="slider-info">Yuri Alekséyevich Gagarin was a Soviet cosmonaut and pilot who became the first man to travel to outer space, achieving an important milestone in the space race.</p>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="slider-header">
-                                <img class="slider-img" src="/assets/Sharman_Helen.jpg">
-                            </div>
-                            <div class="slider-text">
-                                <h2 class="slider-titles">Sharman Helen</h2>
-                                <p class="slider-info">
-                                    she became the first British cosmonaut to travel in space, aboard the Soyuz TM-12 spacecraft.</p>
-                            </div>
-                        </div>
-
-                    </div>
-               </div>
+            <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/Neil-Armstrong.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Neil Armstrong</h2>
+                    <p class="card__description">
+                        was an American astronaut and aeronautical engineer who became the first person to walk on the Moon in 1969.
+                    </p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+        
+              <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/buzz-aldrin.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">buzz Aldrin</h2>
+                     <p class="card__description">he was the pilot of apollo 11 he and neil astrong are the first men to set foot on the moon</p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+        
+              <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/michael-collins.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Michael Collins</h2>
+                    <p class="card__description">He was the one who flew in 1969 in the Columbia command module of the Apollo 11 mission.</p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+        
+              <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/Yuri-Gagarin.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Yuri Gagarin</h2>
+                    <p class="card__description">He is Soviet cosmonaut and pilot who became the first man to travel to outer space, achieving an important milestone in the space race.</p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+        
+              <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/Sharman_Helen.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Sharman Helen</h2>
+                    <p class="card__description">she became the first British cosmonaut to travel in space, aboard the Soyuz TM-12 spacecraft.</p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+        
+              <article class="card" >
+                <img
+                  class="card__background"
+                  src="/assets/valentina-tereshkova.jpg"
+                  alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
+                  width="1920"
+                  height="2193"
+                />
+                <div class="card__content | flow">
+                  <div class="card__content--container | flow">
+                    <h2 class="card__title">Valentina Tereshkova</h2>
+                    <p class="card__description">
+                        She was the first woman to go into space, selected from more than four hundred applicants and five finalists to pilot Vostok 6.</p>
+                  </div>
+                  <button class="card__button">Read more</button>
+                </div>
+              </article>
+              
+               
         </div>
     </section>
 
@@ -198,98 +253,15 @@
        
    </section>
 
-   <section class="Planets-section container">
-    <article class="card" >
-        <img
-          class="card__background"
-          src="/assets/Neil-Armstrong.jpg"
-          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-          width="1920"
-          height="2193"
-        />
-        <div class="card__content | flow">
-          <div class="card__content--container | flow">
-            <h2 class="card__title">Neil Armstrong</h2>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-              labore laudantium deserunt fugiat numquam.
-            </p>
-          </div>
-          <button class="card__button">Read more</button>
-        </div>
-      </article>
-
-      <article class="card" >
-        <img
-          class="card__background"
-          src="/assets/Neil-Armstrong.jpg"
-          alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
-          width="1920"
-          height="2193"
-        />
-        <div class="card__content | flow">
-          <div class="card__content--container | flow">
-            <h2 class="card__title">Neil Armstrong</h2>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum in
-              labore laudantium deserunt fugiat numquam.
-            </p>
-          </div>
-          <button class="card__button">Read more</button>
-        </div>
-      </article>
-
-   </section>
+   
   
 
-   <section>
-    <div>holaaa</div>
-   </section>
+   
 
 
 
-
-
-
-
-
-    <script src="path/to/luxy.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('.center').slick({
-           centerMode: true,
-           centerPadding: '60px',
-            slidesToShow: 3,
-           responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 4
-      }
-    }
-  ]
-});
-    });
-   </script>
 
     <script>
         AOS.init();
