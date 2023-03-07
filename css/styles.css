@@ -28,6 +28,8 @@ body{
     overflow: hidden;
     margin: auto;
     padding: 50px 0;
+    position: relative;
+    z-index: 99;
 }
 .header{
     position: relative;
@@ -283,133 +285,6 @@ width: 90%;
 .moon-subtitles p {
     font-size: 16px;
 }
-.star{
-    position: relative;
-    
-}
- .stars{
-    position: absolute;
-    font-size: 8px;
-    opacity: 0.5;
-    animation: estrella 2s linear  infinite ;
-} 
-
-.star .stars:nth-child(1){
-    top: 200px;
-    left: 50px;
-
-}
-.star .stars:nth-child(2){
-    top: 70%;
-    right: 80%;
-}
-.star .stars:nth-child(3){
-    top: 300px;
-    left: 20%;
-
-}
-.star .stars:nth-child(4){
-    top: 80px;
-    left: 90px;
-
-}
-
-.star .stars:nth-child(5){
-    top: 30%;
-    left: 400px;
-
-}
-
-.star .stars:nth-child(6){
-    top: 360px;
-    right:  80px;
-
-}
-.star .stars:nth-child(7){
-    top: 100px;
-    right: 90px;
-
-}
-
-.star .stars:nth-child(8){
-    bottom: 10px;
-    left: 600px;
-
-}
-.star .stars:nth-child(9){
-    top: 250px;
-    right: 150px;
-
-}
-
-.star .stars:nth-child(10){
-    top: 80px;
-    right: 250px;
-
-}
-
-.star .stars:nth-child(11){
-    top: 400px;
-    right: 250px;
-
-}
-.star .stars:nth-child(12){
-    top: 400px;
-    left: 50px;
-
-}
-.star .stars:nth-child(13){
-    top: 100px;
-    left: 190px;
-
-}
-.star .stars:nth-child(14){
-    top: 200px;
-    left: 190px;
-
-}
-.star .stars:nth-child(15){
-    top: 40px;
-    right: 20px;
-}
-.star .stars:nth-child(16){
-    top: 200px;
-    right: 70px;
-}
-.star .stars:nth-child(17){
-    top: 100px;
-    left: 1px;
-}
-.star .stars:nth-child(18){
-    top: 0;
-    right: 150px;
-}
-
-.star .stars:nth-child(19){
-    top: 10px;
-    left: 800px;
-}
- @keyframes estrella {
-    0%{
-      font-size: 8px;
-      opacity: 0.1;
-    }
-    50%{
-        font-size: 12px;
-        opacity: 2;
-        
-    }
-    75%{
-        font-size: 10px;
-        opacity: 1;
-
-    }
-    100%{
-        font-size: 8px;
-        opacity: 0.1;
-    }
-} 
-
 
 /*Explores*/
 
@@ -651,7 +526,11 @@ border-radius: 20px;
 }
 
 
-
-
-
+/*Stars*/
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
 
