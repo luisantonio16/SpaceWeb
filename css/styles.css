@@ -505,6 +505,7 @@ border-radius: 20px;
     background-color: var(--fondo);
     border-radius: 10px;
     border-radius: 20px;
+    box-shadow:inset 0 0 6px rgba(250, 250, 250, 0.541);
  
 }
 .slider--header{
@@ -560,6 +561,7 @@ border-radius: 20px;
 .swiper {
     width: 350px;
     height: 450px;
+    
 }
 
 .swiper-slide {
@@ -570,6 +572,7 @@ border-radius: 20px;
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+   
 }
 /*Stars*/
 #particles-js{
