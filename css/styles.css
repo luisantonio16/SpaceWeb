@@ -49,6 +49,7 @@ body{
     align-items: center;
     justify-content: space-between;
 
+
 }
 .header-logo h2{
     font-size: 30px;
@@ -60,6 +61,23 @@ body{
     margin: 0 10px;
     text-decoration: none;
     font-weight: 700;
+}
+.nav-menu{
+    width: 60px;
+    display: none;
+    border: 1px solid #fff;
+     border-radius: 10px;
+     z-index: 10;
+
+}
+.wp{
+   width: 40px;
+   display: flex;
+   margin:auto;
+   cursor: pointer;
+  
+
+   
 }
 .nav-btn{
     position: relative;
@@ -199,8 +217,6 @@ body{
     margin: auto;
     width: 90%;
     height: 400px;
-
-
 }
 .history-titles{
     width: 50%;
@@ -597,3 +613,309 @@ border-radius: 20px;
 .footer-social img:hover{
     background-color: #03081ffa;
 }    
+
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .nav-menu{
+        display: flex;
+    }
+    .nav{
+        position: absolute;
+        padding: 20px;
+        background-color: #03081ffa;
+        border-radius: 10px;
+        top: 50px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 140px;
+        height: 400px;
+        z-index: 1;
+       clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+       transition: clip-path 3s ease-out;
+    }
+    .nav-btn{
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    .show{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+    /*Header-Box*/
+    
+.header-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px auto;
+    width: 90%;
+    height: 400px;
+    border-radius:20px;
+    overflow: hidden;
+    background-color: #0a1130b9;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-box-titles p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+
+/*History section*/
+
+.history-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 400px;
+}
+.history-titles{
+    width: 60%;
+    padding: 20px;
+}
+
+.titles{
+    font-size: 30px;
+}
+.sub-titles{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 10px 0;
+
+}
+.historys-image{
+    width: 40%;
+    height: 100%;
+}
+.history-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;   
+}
+
+.buttons{
+    display: block;
+    padding: 10px 15px;
+    margin: 20px 0;
+    width: 150px;
+    border: 2px solid var(--buttons1);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+   
+/*Moon Section*/
+.moon-container{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: auto;
+height: auto;
+width: 90%;
+}
+.moon-titles{
+    width: 90%;
+}
+.moon-titles p {
+    margin: 25px 0;
+    font-size: 20px;
+}
+.moon-image{
+    width: 90%;
+    margin:  20px;
+}
+.moon-img{
+    width: 100%;
+    margin: auto;
+}
+.moon-subtitles{
+    width: 90%;
+    margin-top: 70px;
+  
+}
+.moon-subtitles p {
+    font-size: 20px;
+}
+
+}
+
+
+/*Celphone*/
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .nav-menu{
+        display: flex;
+    }
+    .nav{
+        position: absolute;
+        padding: 20px;
+        background-color: #03081ffa;
+        border-radius: 10px;
+        top: 50px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 140px;
+        height: 400px;
+        z-index: 1;
+       clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
+       transition: clip-path 3s ease-out;
+    }
+    .nav-btn{
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+    .show{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+
+    /*Box-Header*/
+
+    .header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin:100px auto;
+        width: 90%;
+        height: 500px;
+        border-radius:20px;
+        overflow: hidden;
+        background-color: #0a1130b9;
+        position: absolute;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header-box-titles p{
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    .header-box-titles{
+        width:90%;
+        padding: 10px;
+        text-align: center;
+    }
+    .header-box-titles h2{
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    
+.box-btn{
+    font-size: 20px;
+}
+.header-box-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+ 
+}
+.box-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;  
+}
+
+
+/*History section*/
+
+.history-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    height: auto
+}
+.history-titles{
+    width: 90%;
+    padding: 10px;
+}
+
+.titles{
+    font-size: 30px;
+}
+.sub-titles{
+    font-size: 20px;
+    font-weight: 300;
+}
+.historys-image{
+    width: 90%;
+    height: 100%;
+}
+.history-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;   
+}
+
+.buttons{
+    display: block;
+    padding: 10px 15px;
+    margin: 20px auto;
+    width: 150px;
+    border: 2px solid var(--buttons1);
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+   
+/*Moon Section*/
+.moon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    }
+    .moon-titles{
+        width: 90%;
+    }
+    .moon-titles p {
+        margin: 25px 0;
+        font-size: 20px;
+    }
+    .moon-image{
+        width: 90%;
+        margin:  20px;
+    }
+    .moon-img{
+        width: 100%;
+        margin: auto;
+    }
+    .moon-subtitles{
+        width: 90%;
+        margin-top: 70px;
+      
+    }
+    .moon-subtitles p {
+        font-size: 20px;
+    }
+}
