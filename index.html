@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/iconAsteroide.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/iconAsteroide.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+  
     <title>Space Web</title>
 </head>
 <body >
@@ -45,7 +46,7 @@
 
   <div class="space"></div>
 
-  <section id="tsparticles" class="history-section container" data-aos="zoom-in-up" data-aos-duration="2000">
+  <section  class="history-section container" data-aos="zoom-in-up" data-aos-duration="2000">
       <div class="history-container">
           <div class="history-titles">
               <h2 class="titles">History of Exploration</h2>
@@ -109,7 +110,7 @@
             <article class="card" >
               <img
                 class="card__background"
-                src="/assets/buzz-aldrin.jpg"
+                src="/assets/buzz.jpg"
                 alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                 width="1920"
                 height="2193"
@@ -126,7 +127,7 @@
             <article class="card" >
               <img
                 class="card__background"
-                src="/assets/michael-collins.jpg"
+                src="/assets/Michaelcolin.jpg"
                 alt="Photo of Cartagena's cathedral at the background and some colonial style houses"
                 width="1920"
                 height="2193"
@@ -198,45 +199,130 @@
 
   <div class="space"></div>
 
- <section id="luxy" class="Planets-section container" data-aos="zoom-in-up" data-aos-duration="2000" >
+ <section  class="Planets-section container" data-aos="zoom-in-up" data-aos-duration="2000" >
       <div class="planest-titles">
          <h2 class="titles">Some Planets</h2>
          <div class="line-explore"></div>
       </div>
-      <div class="planets-container ">
-          <div class="slider-planets">
-              <div class="slider--container">
-                  <div class="slider--header">
-                      <img class="planets-img" src="/assets/mercurio.png" alt="Mercurio">
-                  </div>
-                  <div class="slider--titles">
-                      <h2 class="slider--title">Mercurio</h2>
-                  </div>
-              </div>
-          </div>
+      <div class=" swiper mySwiper">
+        <article class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider--container">
+                <div class="slider--header">
+                    <img class="planets-img" src="/assets/mercurio.png" alt="Mercurio">
+                </div>
+                <div class="slider--titles">
+                    <h2 class="slider--title">Mercurio</h2>
+                    <p class="slider-subtitles">It is the planet of the solar system closest to the Sun and the smallest. It is part of the so-called inner planets and lacks natural satellites like Venus</p>
+                </div>
+            </div>
+         </div>
 
-          <div class="slider-planets">
-              <div class="slider--container">
-                  <div class="slider--header">
-                      <img class="planets-img" src="/assets/Venus.png" alt="Venus">
-                  </div>
-                  <div class="slider--titles">
-                      <h2 class="slider--title">Venus</h2>
-                  </div>
+         <div class="swiper-slide">
+          <div class="slider--container">
+              <div class="slider--header">
+                  <img class="planets-img" src="/assets/Venus.png" alt="Venus">
+              </div>
+              <div class="slider--titles">
+                  <h2 class="slider--title">Venus</h2>
+                  <p class="slider-subtitles">It is the second planet in the solar system in order of proximity to the Sun and the third in terms of size in ascending order after Mercury and Mars. Like Mercury, it lacks natural satellites.</p>
               </div>
           </div>
-        
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/tierra2-removebg-preview.png" alt="Tierra">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Tierra</h2>
+                <p class="slider-subtitles">It is a planet of the solar system that revolves around its star the Sun in the third innermost orbit. It is the densest and fifth largest of the eight planets in the solar system. It is also the largest of the four terrestrial or rocky.</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/marte.png" alt="marte">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Marte</h2>
+                <p class="slider-subtitles">It is the fourth planet in order of distance from the Sun and the second smallest in the solar system, after Mercury and is also known as the red planet due to the reddish appearance given by the predominant iron oxide on its surface.</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/jupiter.png" alt="Jupiter">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Jupiter</h2>
+                <p class="slider-subtitles">It is the largest planet in the solar system and the fifth in order of distance from the Sun. It is a gas giant that is part of the so-called outer planets.</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/saturno.png" alt="saturno">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Saturno</h2>
+                <p class="slider-subtitles">It is the sixth planet in the solar system counting from the Sun, the second in size and mass after Jupiter, and the only one with a ring system visible from Earth. The most characteristic aspect of Saturn is its bright and large rings.</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/urano.png" alt="Urano">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Urano</h2>
+                <p class="slider-subtitles">It is the seventh planet in the solar system, the third largest, and the fourth most massive. Uranus is similar in composition to Neptune, and both have a different composition from the other two gas giants (Jupiter and Saturn).</p>
+            </div>
+        </div>
+       </div>
+
+       <div class="swiper-slide">
+        <div class="slider--container">
+            <div class="slider--header">
+                <img class="planets-img" src="/assets/neptuno.png" alt="neptuno">
+            </div>
+            <div class="slider--titles">
+                <h2 class="slider--title">Neptuno</h2>
+                <p class="slider-subtitles">It is the eighth planet in distance from the Sun and the farthest from the solar system. It is part of the so-called outer planets, and within these, it is one of the ice giants, and it is the first to be discovered thanks to mathematical predictions.</p>
+            </div>
+        </div>
+       </div>
+        </article>
+
       </div>
-     
+
  </section>
 
-
-
-
-
-
-
 </main>
+
+<footer class="footer">
+    <section class="footer-container container">
+       <div class="footer-logo">
+        <h2>SpacePedia</h2>
+        <p>Exploring the Universe</p>
+       </div>
+       <div class="footer-social">
+         <img  src="/assets/facebook.png">
+         <img src="/assets/Instagram.png">
+         <img src="/assets/twitter.png">
+       </div>
+    </section>
+
+</footer>
   
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
