@@ -75,10 +75,11 @@ body{
    display: flex;
    margin:auto;
    cursor: pointer;
-  
-
-   
 }
+.show{
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+
 .nav-btn{
     position: relative;
     display: inline-block;
@@ -774,7 +775,10 @@ width: 90%;
         height: 400px;
         z-index: 1;
        clip-path: polygon(0 0, 100% 0%, 100% 0, 0 0);
-       transition: clip-path 3s ease-out;
+       transition: clip-path .5s ease-out;
+    }
+    .show{
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     }
     .nav-btn{
         font-size: 20px;
@@ -783,10 +787,6 @@ width: 90%;
         font-weight: 700;
         margin-top: 40px;
     }
-    .show{
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-    }
-
     /*Box-Header*/
 
     .header-box{
